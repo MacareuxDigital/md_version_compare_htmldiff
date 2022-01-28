@@ -1,0 +1,18 @@
+ins.diffmod, ins.diffins {
+    background-color: #aceac7;
+    text-decoration: none;
+}
+del.diffmod, del.diffdel {
+    background-color: #ffa1a1;
+    text-decoration: line-through;
+}
+.diffmod img, .diffmod img, del.diffdel img {
+    border-width: 4px;
+    border-style: dashed;
+}
+ins.diffmod img, ins.diffins img {
+    border-color: #aceac7;
+}
+del.diffmod img, del.diffdel img {
+    border-color: #ffa1a1;
+}

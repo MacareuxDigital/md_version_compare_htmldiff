@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ssddanbrown/htmldiff": "^1.0"
+    }
+}
