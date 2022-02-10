@@ -1,18 +1,26 @@
-ins.diffmod, ins.diffins {
-    background-color: #aceac7;
+ins.diffmod, ins.diffins, del.diffmod, del.diffdel {
     text-decoration: none;
-}
-del.diffmod, del.diffdel {
-    background-color: #ffa1a1;
-    text-decoration: line-through;
-}
-.diffmod img, .diffmod img, del.diffdel img {
     border-width: 4px;
     border-style: dashed;
+    padding: 1px;
+    display: inline-block;
 }
-ins.diffmod img, ins.diffins img {
-    border-color: #aceac7;
+ins.diffmod, ins.diffins {
+    border-color: #29bd67;
 }
-del.diffmod img, del.diffdel img {
-    border-color: #ffa1a1;
+del.diffmod, del.diffdel {
+    text-decoration: line-through;
+    border-color: #fa2525;
+}
+.diff-blink {
+    -webkit-animation: diff-blink 0.6s both;
+    animation: diff-blink 0.6s both;
+}
+@-webkit-keyframes diff-blink {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: .5;}
+}
+@keyframes diff-blink {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: .5;}
 }

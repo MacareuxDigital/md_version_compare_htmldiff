@@ -40,6 +40,11 @@ class Controller extends Package
 
         $assetList = AssetList::getInstance();
         $assetList->register('css', 'md_htmldiff', 'css/htmldiff.css', [], $this->getPackageEntity());
+        $assetList->register('javascript', 'md_htmldiff', 'js/htmldiff.js', [], $this->getPackageEntity());
+        $assetList->registerGroup('md_htmldiff', [
+            ['css', 'md_htmldiff'],
+            ['javascript', 'md_htmldiff']
+        ]);
 
         $this->registerAutoload();
     }
